@@ -1,0 +1,14 @@
+<p>Nombre del empleado: {{ nombre }}</p>
+<p>Apellido del empleado: {{ apellido }}</p>
+<p>Edad del empleado: {{ edad }}</p>
+<p>Según la edad, el empleado es:  {{ edad <18 ? "Menor de edad":"Mayor de edad"}}</p>
+<p>Nombre de la empresa: {{ empresa.value }}</p>
+<!--<p>Nombre de la empresa: {{ empresa }}</p>-->
+<!--<p>edad del empleado: {{ getEdad() }}</p>-->
+<br>
+<br>
+Introduce el nombre de la empresa: <input type="text" #empresa (keyup)="0"  [disabled]="habilitacionCuadro"/>
+ <br>
+ <br>
+ Registrado <input type="checkbox" id="registro" [checked]="usuarioRegistrado" />
+ {{getRegistroUsuario()}}
